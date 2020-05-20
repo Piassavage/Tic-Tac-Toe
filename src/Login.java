@@ -6,7 +6,7 @@ public class Login {
     public void show(){
 
         JFrame janela = new JFrame("Login");/* É criada uma janela em JFrame que registra o login do usuário*/
-        janela.setSize( 300,150);/* Define o tamanho da janela de login*/
+        janela.setSize( 300,175);/* Define o tamanho da janela de login*/
         janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);/* Define que o comando de fechar a janela, feche o aplicativo*/
         janela.setLocationRelativeTo(null);/* Faz com que a janela seja centralizada na tela*/
 
@@ -25,6 +25,14 @@ public class Login {
         JPasswordField textFieldSenha = new JPasswordField();/* Cria um campo de texto de senha para que a senha do usuário seja digitada*/
         textFieldSenha.setBounds(75, 60, 175, 20);/* Define tamanho e posicionamento do campo de texto da Senha*/
 
+        JButton botaoEntrar = new JButton("Entrar");/* Cria um botao que quando clicado, a pessoa tenha acesso ao jogo*/
+        botaoEntrar.setBounds(50, 95, 85,25);/* Define o tamanho e posicionamento do botão de acessar o jogo*/
+
+        JButton botaoCancelar = new JButton("Cancelar");/* Cria um botao que quando clicado, a pessoa cancele o acesso ao jogo*/
+        botaoCancelar.setBounds(160, 95, 90,25);/* Define o tamanho e posicionamento do botão de cancelar o acesso ao jogo*/
+
+        janela.add(botaoEntrar);/* Adiciona o botão de entrar no jogo à janela*/
+        janela.add(botaoCancelar);/* Adiciona o botão de cancelar o acesso ao jogo à janela*/
         janela.add(labelSenha);/* Adiciona a label de senha à janela*/
         janela.add(textFieldSenha);/* Adiciona o campo de texto da senha à janela*/
         janela.add(labelUsuario);/* Adiciona a label de usuário à janela*/
