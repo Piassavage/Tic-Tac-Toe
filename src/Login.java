@@ -27,9 +27,28 @@ public class Login {
 
         JButton botaoEntrar = new JButton("Entrar");/* Cria um botao que quando clicado, a pessoa tenha acesso ao jogo*/
         botaoEntrar.setBounds(50, 95, 85,25);/* Define o tamanho e posicionamento do botão de acessar o jogo*/
+        botaoEntrar.addActionListener(evt ->{
+
+        });/* Cria um evento se o botão entrar for pressionado*/
 
         JButton botaoCancelar = new JButton("Cancelar");/* Cria um botao que quando clicado, a pessoa cancele o acesso ao jogo*/
         botaoCancelar.setBounds(160, 95, 90,25);/* Define o tamanho e posicionamento do botão de cancelar o acesso ao jogo*/
+        botaoCancelar.addActionListener(evt ->{
+            JFrame janela2 = new JFrame();
+            janela2.setSize(100,150);
+            janela2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            janela2.setLocationRelativeTo(null);
+
+            JPanel painel2 = new JPanel();
+            painel2.setLayout(null);
+
+            JLabel labelJanela2 = new JLabel("Obrigado por jogar!");
+            labelJanela2.setBounds(10,20,10,50);
+
+            janela2.add(labelJanela2);
+            janela2.setVisible(true);
+            janela.setVisible(false);
+        });/* Cria um evento se o botão cancelar for pressionado*/
 
         janela.add(botaoEntrar);/* Adiciona o botão de entrar no jogo à janela*/
         janela.add(botaoCancelar);/* Adiciona o botão de cancelar o acesso ao jogo à janela*/
