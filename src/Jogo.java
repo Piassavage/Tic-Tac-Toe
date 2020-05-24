@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class Jogo {
-
+	Nome nome = new Nome();
 	private String usuarioAtual = "X";
 	private int jogadas = 0;
 
@@ -57,6 +57,7 @@ public class Jogo {
 
 		if (venceu) {
 			// se houve um vencedor, mostra o vencedor e reinicia o jogo
+			Nome nome = new Nome();
 			JOptionPane.showMessageDialog(null, "O vencedor foi " + usuarioAtual);
 			reiniciarJogo();
 		}

@@ -29,6 +29,10 @@ public class Login {
         botaoEntrar.addActionListener(evt ->{
             janela.setVisible(false);
 
+            Nome nome = new Nome();
+            nome.jogador1 = textFieldUsuario1.getText();
+            nome.jogador2 = textFieldUsuario2.getText();
+
             Jogo game = new Jogo();
             game.show();
         });/* Cria um evento se o botão entrar for pressionado*/
