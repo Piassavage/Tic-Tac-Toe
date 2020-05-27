@@ -12,17 +12,17 @@ public class Login {
         JPanel painel = new JPanel();/* Cria um painel JPanel*/
         painel.setLayout(null);/* Deixa um layout nulo para o painel, onde se tem de definir a posição de cada componente*/
 
-        JLabel labelUsuario1 = new JLabel("Jogador 1: ");/* Cria uma texto escrito 'usuário'*/
-        labelUsuario1.setBounds(20, 20, 80, 30);/* Define o tamanho e posicionamento da label de usuário*/
+        JLabel labelUsuario1 = new JLabel("Jogador 1: ");/* Cria uma texto escrito 'Jogador 1:'*/
+        labelUsuario1.setBounds(20, 20, 80, 30);/* Define o tamanho e posicionamento da label de Jogador 1*/
 
-        JTextField textFieldUsuario1 = new JTextField();/* Cria um campo de texto para que o nome do 1º Usuário seja digitado*/
-        textFieldUsuario1.setBounds(90, 25, 175, 20);/* Define tamanho e posicionamento do campo de texto do 1º Usuário*/
+        JTextField textFieldUsuario1 = new JTextField();/* Cria um campo de texto para que o nome do 1º Jogador seja digitado*/
+        textFieldUsuario1.setBounds(90, 25, 175, 20);/* Define tamanho e posicionamento do campo de texto do 1º Jogador*/
 
-        JLabel labelUsuario2 = new JLabel("Jogador 2: ");/* Cria uma texto escrito 'senha' */
-        labelUsuario2.setBounds(20, 55, 80, 30);/* Define o tamanho e posicionamento da label de senha*/
+        JLabel labelUsuario2 = new JLabel("Jogador 2: ");/* Cria uma texto escrito 'Jogador 2:' */
+        labelUsuario2.setBounds(20, 55, 80, 30);/* Define o tamanho e posicionamento da label de Jogador 2*/
 
-        JTextField textFieldUsuario2 = new JTextField();/* Cria um campo de texto para que o nome do 2º Usuário seja digitado*/
-        textFieldUsuario2.setBounds(90, 60, 175, 20);/* Define tamanho e posicionamento do campo de texto do 2º Usuário*/
+        JTextField textFieldUsuario2 = new JTextField();/* Cria um campo de texto para que o nome do 2º Jogador seja digitado*/
+        textFieldUsuario2.setBounds(90, 60, 175, 20);/* Define tamanho e posicionamento do campo de texto do 2º Jogador*/
 
         JButton botaoEntrar = new JButton("Entrar");/* Cria um botao que quando clicado, a pessoa tenha acesso ao jogo*/
         botaoEntrar.setBounds(50, 95, 85,25);/* Define o tamanho e posicionamento do botão de acessar o jogo*/
@@ -48,10 +48,10 @@ public class Login {
 
         painel.add(botaoEntrar);/* Adiciona o botão de entrar no jogo ao painel*/
         painel.add(botaoCancelar);/* Adiciona o botão de cancelar o acesso ao jogo ao painel*/
-        painel.add(labelUsuario2);/* Adiciona a label de senha ao painel*/
-        painel.add(textFieldUsuario2);/* Adiciona o campo de texto da senha ao painel*/
-        painel.add(labelUsuario1);/* Adiciona a label de usuário ao painel*/
-        painel.add(textFieldUsuario1);/* Adiciona o campo de texto do usuário ao painel*/
+        painel.add(labelUsuario2);/* Adiciona a label de Jogador 2 ao painel*/
+        painel.add(textFieldUsuario2);/* Adiciona o campo de texto do 2º Jogador ao painel*/
+        painel.add(labelUsuario1);/* Adiciona a label de Jogador 1  ao painel*/
+        painel.add(textFieldUsuario1);/* Adiciona o campo de texto do Jogador 1 ao painel*/
 
 
         janela.getRootPane().setDefaultButton(botaoEntrar);/* Atribui à tecla enter a opção de entrar*/
